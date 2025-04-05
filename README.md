@@ -7,11 +7,8 @@ Model Overview:
 Data Preprocessing: Uses MinMaxScaler for feature scaling and constructs input sequences with a time step of 60 days.
 
 Architecture:
-
 Three LSTM layers (100 units each) with Dropout (0.2) to prevent overfitting.
-
 A Dense layer for final prediction.
-
 Compiled with Adam optimizer and Mean Squared Error (MSE) loss function.
 
 Training: Runs for 20 epochs with a batch size of 32.
@@ -20,9 +17,5 @@ Prediction: The model predicts future stock prices, and results are visualized u
 
 Visualization:
 The plot compares actual vs. predicted stock prices, where:
-
 Red line: Actual stock price
-
 Green line: Predicted stock price
-
-This LSTM-based approach provides a foundation for stock price forecasting and can be improved with additional features like technical indicators and external market factors.
